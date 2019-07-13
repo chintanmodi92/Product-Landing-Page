@@ -1,0 +1,299 @@
+body {
+  background-color: #F7F1F7;
+  color: #2F2A34;
+  font-family: 'Quicksand', 'Abel', 'Noto Sans TC', sans-serif;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  padding: 0 5vw 5px 5vw;
+  margin: auto;
+  align-items: center;
+  background-color: #F7F1F7;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.logoBox {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 56px;
+  height: 56px;
+  object-fit: scale-down;
+  display: inline-block;
+}
+
+#header-img {
+  display: inline;
+  max-width: 80%;
+}
+
+#companyName {
+  font-family: 'Expletus Sans', cursive;
+  font-weight: bolder;
+  font-size: 120%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#companyName h2 {
+  margin: 0;
+}
+
+#nav-bar {
+  width: 30vw;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+@media(max-width: 900px) {
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logoBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #form {
+    height: auto;
+  }
+
+  #video {
+    width: auto;
+    height: auto;
+  }
+
+  #pricing {
+    flex-wrap: wrap;
+  }
+  .priceCard {
+    margin: 20px;
+  }
+  #footer ul {
+    flex-direction: column;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2F2A34;
+}
+
+#container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+#formDiv {
+  height: 80vh;
+  width: 100%;
+  background-image: url(https://www.orangeleafyogurt.com/assets/volumes/images/_1200x600_crop_center-center_none/froyo.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+#form h1 {
+  margin: 160px 0 80px 0;
+  color: #F7F1F7;
+  text-shadow: 5px 5px 8px #2F2A34;
+  font-size: 48px;
+}
+
+input[type=email] {
+  width: 35%;
+  height: 25px;
+  text-align: center;
+  margin: 20px;
+}
+
+#submit {
+  background: #1EAE09;
+  background-color: #1EAE09;
+  color: #F7F1F7;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 100%;
+  border-style: none;
+  border-radius: 25px;
+  border-style: double;
+  margin: 20px;
+}
+
+#features {
+  margin: 100px auto;
+  position: static;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+  top: 50%;
+  position: relative;
+}
+
+.featureIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.img-1, .img-3 {
+  max-width: 100%;
+}
+
+.img-2 {
+  max-width: 95%;
+}
+
+.featureDetails h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.featureDetails p {
+  margin: 0;
+  padding: 0;
+}
+
+.image-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.image-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.image-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.featureDetails-1 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.featureDetails-2 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.featureDetails-3 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#howWe {
+  display: flex;
+  justify-content: center;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 50px;
+}
+
+.priceCard {
+  background-color: #2F2A34;
+  color: #F7F1F7;
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.priceCard h3 {
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.priceCard h2 {
+  text-align: center;
+}
+
+.select {
+  align-self: center;
+  width: 100px;
+  height: 30px;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  border-style: double;
+  background-color: #1EAE09;
+  border-radius: 25px;
+  color: #F7F1F7;
+}
+
+#footer {
+  background-color: #9F8D9F;
+  color: #F7F1F7;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.8em;
+}
+
+#footer nav {
+  width: 50%;
+  margin: auto;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
